@@ -1,0 +1,132 @@
+:root {
+	--primary-color: rgb(184, 106, 18);
+	--dark-color: #141414;
+	--light-color: #f4f4f4;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color: #999;
+	background-image: url('https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') ;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  	background-size: cover;
+}
+h2 {
+	color: rgba(251, 176, 255, 0.75);
+	display: block;
+	font-size: 2em;
+	margin-top: 0.83em;
+	margin-bottom: 0.83em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.showcase-content {
+	position: relative;
+	z-index: 2;
+	width: 65%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 9rem;
+}
+
+.showcase-content h1 {
+	font-weight: 700;
+	font-size: 5.2rem;
+	line-height: 1.2;
+	margin: 0 0 2rem;
+}
+
+
+.btn {
+	display: inline-block;
+	background: var(--primary-color);
+	color: rgb(2, 2, 2);
+	padding: 0.4rem 1.3rem;
+	font-size: 1rem;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	margin-right: 0.5rem;
+	transition: opacity 0.2s ease-in;
+	outline: none;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+	border-radius: 10px;
+}
+
+.btn:hover {
+	opacity: 0.9;
+}
+
+.btn-xl {
+	font-size: 2rem;
+	padding: 1.5rem 2.1rem;
+	text-transform: uppercase;
+}
+
+.btn-lg {
+	font-size: 1rem;
+	padding: 0.8rem 1.3rem;
+	text-transform: uppercase;
+}
+
+@media (max-width: 960px) {
+
+	.showcase-content h1 {
+		font-size: 3.7rem;
+		line-height: 1;
+	}
+
+	.btn-xl {
+		font-size: 1.5rem;
+		padding: 1.4rem 2rem;
+		text-transform: uppercase;
+	}
+
+	.text-xl {
+		font-size: 1.5rem;
+	}
+
+	.text-lg {
+		font-size: 1.3rem;
+		margin-bottom: 1rem;
+	}
+}
+
+@media (max-width: 700px) {
+
+	.showcase-content h1 {
+		font-size: 2.5rem;
+		line-height: 1;
+	}
+
+	.btn-xl {
+		font-size: 1rem;
+		padding: 1.2rem 1.6rem;
+		text-transform: uppercase;
+	}
+}
+
+@media(max-height: 600px) {
+   .showcase-content {
+		margin-top: 3rem;
+    }
+}
